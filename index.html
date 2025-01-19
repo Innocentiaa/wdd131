@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - Innocentia Chinweotito</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Innocentia Chinweotito Ekechukwu. This page covers topics like HTML, CSS, JavaScript, and modern web development practices">
+    <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="//fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
@@ -23,30 +23,40 @@
     </header>
 
     <main>
-        <section class="about-me">
-            <h2> About Me</h2>
-            <div class="about-content">
+        <section class="card">
+
+            <div class="about-me">
+                <h2> About Me</h2>
+            </div>
+            
+            <div class="about-content">    
                 <p>
                     My name is Innocentia Chinweotito Ekechukwu. I'm from Imo state, Nigeria and currently live in Uyo, Akwa Ibom State. I work as a data entry specialist and a Customer relationship manager. I enjoy learning new things, meeting people and exploring the world of technology.
                 </p>
                 <img src="images/Card1.jpg" alt="My Profile Picture">
+            
             </div>
-        </section>
 
-        <section class="location">
-            <h2>Imo State, Nigeria</h2>
+            <div class="location">
+                <h2>Imo State, Nigeria</h2>
+            </div>
+
             <div class="location-content">
-                <img src="images/Card2.png" alt="Nigerian Flag">
                 
+                <img src="images/Card2.png" alt="Nigerian Flag">
                 <p>
                     Nigeria is known as the "Giant of Africa" and is home to diverse cultures, languages and traditions.
                     Imo State, located in the southeastern region , is famous for its rich cultural heritage, festivals,and natural resources.
                 </p>
+                
             </div>
         </section>
 
-        <section class="resources">
-            <h2> Web Dev Resources</h2>
+        <section class="card">
+            <div class="web-resources">
+                <h2> Web Dev Resources</h2>
+            </div>
+            
             <ul>
                 <li><a href="#">Dev. to Community</a></li>
                 <li><a href="#">Smashing Magazine</a></li>
@@ -64,10 +74,5 @@
         </p>
         <p id="lastModified"></p>
     </footer>
-    
-    <script>
-        document.getElementById('currentyear').textContent = new Date().getFullYear();
-        document.getElementById('lastModified').textContent = 'Last Modification: ${document.lastModified}';
-    </script>
 </body>
 </html>
