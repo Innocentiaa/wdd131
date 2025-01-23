@@ -20,7 +20,12 @@
    .temples{
         grid-template-columns: repeat(2, 1fr);
     }
+    main img{
+        max-width: 100%;
+
+    }
 }
+
 
 
 @media screen and (min-width:1024px){
