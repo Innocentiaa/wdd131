@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header{
+    background-color: indigo;
+    display: grid;
+    gap: 1rem;
+    color: white;
+    padding: 20px;
+    border: 1px solid rgb(17, 5, 19);
+    text-align: center;
+    box-shadow: 0 0 30px rgb(213, 162, 250);
+}
+
+header, main {
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.hamburger{
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+
+#menu {
+    display: flex;
+    list-style-type: none;
+}
+
+menu.show{
+    display: flex;
+}
+
+#menu li {
+    margin: 0 10px;
+}
+
+#menu a:hover {
+    text-decoration: none;
+    color: rgb(228, 140, 236);
+    text-decoration: underline;
+}
+    
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+
+}
+
+nav ul li a:hover{
+    color: rgb(228, 140, 236);
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.temples{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+figure {
+    margin: 5px;
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: indigo;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+
+footer span {
+    color: #c34bc7;
+}
+
+@media (max-width: 768px) {
+   .hamburger{
+    display: block;
+}
+    
+#menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    padding:20px ;
+}
+ #menu.show{
+    display: block;
+ }
+
+ #menu li {
+    margin: 10px 0;
+ }
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
