@@ -1,11 +1,13 @@
+:root{
+    --primary-color:#186325;
+    --secondary-color:#b7e2e7;
+    --font-family: 'Merriweather', sans-serif;
+    
+}
+
 @media (max-width: 768px){
 
-    :root{
-        --primary-color:#186325;
-        --secondary-color:#b7e2e7;
-        font-family: 'Merriweather', sans-serif;
-        
-    }
+    
 
     main{
         gap:20px;
