@@ -3,10 +3,10 @@
     :root{
         --primary-color:#186325;
         --secondary-color:#b7e2e7;
-        --tertiary-color: #fff;
+        font-family: 'Merriweather' sans-serif;
         
     }
-    
+
     main{
         gap:20px;
         padding: 10px;
