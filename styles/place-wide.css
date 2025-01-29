@@ -1,6 +1,6 @@
 :root{
     --primary-color:#186325;
-    --secondary-color:#b7e2e7;
+    --secondary-color:#fff;
     --font-family: 'Merriweather', sans-serif;
     
 }
@@ -55,7 +55,7 @@
     h3{
         text-align: center;
         background-color: #186325;
-        color: #fff;
+        color: var(--secondary-color);
         padding: 0;
         margin: 1px;
     }
