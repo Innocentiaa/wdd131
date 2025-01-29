@@ -1,0 +1,25 @@
+@media (max-width: 768px){
+    main{
+        gap:20px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px){
+    .data{
+        position: absolute;
+        top: 250px;
+        left: 70px;
+    }
+
+    .weather{
+        position: absolute;
+        bottom: -150px;
+        right: 80px;
+    }
+
+    .hero image{
+        width: 100%;
+        
+    }
+}

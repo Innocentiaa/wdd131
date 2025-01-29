@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 W03 Country Assignment</title>
+    <meta  name="description" content=" WDD 131 week 03 assignment on responsive page - Brief data about Nigeria">
+    <meta name="author" content="Innocentia Chinweotito Ekechukwu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place-mobile.css">
+    <link rel="stylesheet" href="styles/place-wide.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <header>
+
+        <h1>NIGERIA</h1>
+    </header>
+
+    <main>
+    
+
+        <section class="hero">
+            <h2>Nigeria -The  Giant of Africa</h2>
+            <picture>
+                <source srcset="images/hero-small.webp" media="(min-width: 768px)">
+                <source srcset="images/hero2.webp" media="(max-width: 768px)">
+                <img src="images/hero-small.webp" alt="Hero Image" class="responsive-iimage" width="400" height="200">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 923,786 sq km</li>
+                <li><strong>Population: </strong> 232.7 million</li>
+                <li><strong>Capital:</strong> FCT Abuja</li>
+                <li><strong>Languages:</strong> English, Multi-lingual</li>
+                <li><strong>Currency:</strong> Nigerian Naira</li>
+                <li><strong>Time zone:</strong> UTC +1</li>
+                <li><strong>Calling code:</strong> +234</li>
+                <li><strong>Internet TLD:</strong>.ng</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <ul>
+            
+                <li><strong>Temperature:</strong> 10°C</li>
+                <li><strong>Conditions:</strong>Clear</li>
+                <li><strong>windSpeed:</strong>5km/hr </li>
+                <li><strong>Wind-Chill:</strong><span id="windChill">Calculating...</span></li>
+            </ul>
+            
+
+        </section>
+        
+
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Innocentia Chinweotito Ekechukwu, Nigeria.
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</div>
+</body>
+</html>
