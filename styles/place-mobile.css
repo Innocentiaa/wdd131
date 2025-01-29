@@ -35,6 +35,13 @@ header, footer {
     height: auto;
     
 }
+
+.weather-icon{
+    display: none;
+    width: 150px;
+    height:auto;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -105,4 +112,14 @@ footer span {
     h1{
         font-size:3rem;
     }
+
+     p::after {
+    
+        content: " ®";
+        font-size: 0.8rem;
+        vertical-align: super;
+    }
 }
+    
+
+

@@ -1,4 +1,12 @@
 @media (max-width: 768px){
+
+    :root{
+        --primary-color:#186325;
+        --secondary-color:#b7e2e7;
+        --tertiary-color: #fff;
+        
+    }
+    
     main{
         gap:20px;
         padding: 10px;
@@ -21,5 +29,32 @@
     .hero image{
         width: 100%;
         
+    }
+
+    .weather-icon{
+        display: block;
+        position: absolute;
+        top: 2%;
+        left: 39.5%;
+    }
+
+    .weather-icon img{
+        width: 50px;
+    }
+
+    h2{
+        text-align: left;
+        padding: 1.2rem;
+        margin: -1rem 2rem 1rem -1.0rem ;
+        border-radius: 10px;
+        font-size: 1.5rem;
+    }
+
+    h3{
+        text-align: center;
+        background-color: #186325;
+        color: #fff;
+        padding: 0;
+        margin: 1px;
     }
 }
