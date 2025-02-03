@@ -186,7 +186,7 @@ img {
     margin: 0.2rem;
     border-radius: 10px;
     background: #000;
-    animation: fade 10s;
+    animation: fade 5s;
 }
 
 @keyframes fade {
