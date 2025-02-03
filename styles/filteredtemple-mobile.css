@@ -1,0 +1,216 @@
+/* General reset */
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: relative;
+    max-width: 100%;
+    background-color: indigo;
+    display: grid;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header, main {
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+#menu {
+    display: flex;
+    list-style-type: none;
+    background-color: indigo;
+}
+
+#menu.show {
+    display: flex;
+}
+
+#menu li {
+    margin: 0 10px;
+}
+
+#menu a:hover {
+    text-decoration: none;
+    color: rgb(228, 140, 236);
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav ul li a:hover {
+    color: rgb(228, 140, 236);
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.temples {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border-radius: 10px;
+    place-items: center;
+    padding: 1rem;
+
+}
+
+.temples section {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a card effect */
+    text-align: center;
+}
+
+
+footer {
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: indigo;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer span {
+    color: #c98db0;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main img {
+        max-width: 100%;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        padding: 20px;
+    }
+
+    #menu.show {
+        display: block;
+    }
+
+    #menu li {
+        margin: 10px 0;
+    }
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.temple-card {
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.temple-card h2 {
+    font-size: 1.5rem;
+    margin: 8px 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0.2rem;
+    border-radius: 10px;
+    background: #000;
+    animation: fade 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+figcaption {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+figure p {
+    font-size: medium;
+    padding: 5px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+

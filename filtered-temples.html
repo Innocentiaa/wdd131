@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples Album</title>
+    <meta name="description" content="Temples picture manipulation using DOM">
+    <meta name="author" content="Innocentia Chinweotito Ekechukwu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filteredtemple-mobile.css"> 
+    <link rel="stylesheet" href="styles/filteredtemple-large.css">
+    <script src="scripts/filtered-temple.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Temples Gallery</h1>
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        <nav id="menu">
+            
+            <ul>
+                <li><a href="#" id="filter-home" title="Home">Home</a></li>
+                <li><a href="#" id="filter-old" title="Old">Old</a></li>
+                <li><a href="#" id="filter-new" title="New">New</a></li>
+                <li><a href="#" id="filter-large" title="Large">Large</a></li>
+                <li><a href="#" id="filter-small" title="Small">Small</a></li>
+            </ul>
+        </nav>   
+    </header>
+
+    <main> 
+       
+
+        <section>
+            <h2 id="temples-menu">Home</h2>
+            <div class="temples">
+                
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Innocentia Chinweotito Ekechukwu, Nigeria.
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
