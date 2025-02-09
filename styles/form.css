@@ -48,7 +48,6 @@ body {
     padding: 1.1rem;
   }
 
-
   .prf input[type="date"],
   .prf input[type="text"],
   .prf select,
@@ -64,10 +63,8 @@ body {
   .prf textarea{
     min-height: 100px;
     word-wrap: break-word;
-
   }
   
-
   .features{
     font-size: var(--font-size);
   }
@@ -97,3 +94,55 @@ body {
     background: #a389a1;
   }
   
+
+
+
+  @media screen and (max-width: 768px) {
+    /* Adjusting padding and margin for smaller screens */
+    main {
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    header,
+    footer {
+        padding: 1rem;
+        font-size: 0.9rem; 
+    }
+
+    .rating {
+        gap: 20px; 
+        transform: scale(0.85); 
+    }
+
+    .prf input[type="date"],
+    .prf input[type="text"],
+    .prf select,
+    .prf textarea {
+        max-width: 100%; 
+    }
+
+    .prf input[type="submit"] {
+        width: 100%; 
+    }
+}
+
+/* Further adjustments for very small screens */
+@media screen and (max-width: 480px) {
+
+    .rating {
+        transform: scale(0.7); /* Further reduce size for very small screens */
+    }
+    body {
+        font-size: 14px;
+    }
+
+    .prf fieldset {
+        font-size: 1rem;
+    }
+
+    .optional {
+        font-size: 0.8rem; 
+    }
+}
+
