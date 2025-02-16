@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CenzonHub Official Homepage</title>
+    <meta name="author" content="Innocentia Chinweotito Ekechukwu">
+    <meta name="description" content="CenzonHub: Your trusted platform for seamless online shopping experiences, connecting buyers and sellers effortlessly.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header class="main-header"> 
+        
+
+        <a href="index.html">
+            <img src="images/logo3.png" alt="Company Logo" width="400">
+          </a>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+            
+            
+            <label>
+                <select id="product2" name="product" required>
+                    <option value="" disabled selected>Search Products</option>
+                </select>
+            </label>
+            <a href="cart.html">🛒</a>
+        </nav>
+    </header>
+
+        <section class="hero">
+            <img src="images/hero.gif" alt="Hero Image" class="hero-image">
+            <div class="hero-content">
+                <!-- Signup Form -->
+                <div class="signup-form">
+                    <h2>Sign Up</h2>
+                    <form action="signup.html" method="get" >
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+                <div class="shopper">
+                    <h3>Happy Shopping!</h3>
+                    <img src="images/shopper.jpg" alt="shopper" width="400">
+
+                </div>
+    
+                <!-- CTA Button -->
+                <div class="cta">
+                    <button onclick="window.location.href='products.html'">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2> Our offer</h2>
+            <p>Our services include</p>
+            <ul>
+                <li>Sales of different categories of goods and services.</li>
+                <li>Buying and selling on the website.</li>
+                <li>Local and International advertisement.</li>
+                <li>Ambassadorial deals, partnerships and Collaborations.</li>
+            </ul><br>
+        </section>
+
+
+    
+
+    <footer>
+
+        <section class="footer-nav">  
+            <nav class="foot">
+                <h2>About CenzonHub</h2>  
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="terms.html"> Terms and Condition</a>
+            </nav>
+        
+            <nav class="payment">
+                <h2>Payment</h2>
+                <a href="https://mea.mastercard.com/en-region-mea.html"> Mastercard</a>
+                <a href="https://myverveworld.com/home"> Verve </a>
+                <a href="https://www.visa.com.ng/"> Visa </a>
+
+            </nav>
+
+        <div class="social-nav">
+            <h2>Connect With Us</h2><br>
+            <div class="social">
+                <a href="https://www.facebook.com/gwendolyn.innocentia"><img src="images/facebook.webp" width="40" alt="facebook"></a>
+                <a href="https://www.instagram.com/centiagwendolyn?igsh=YW1xa2E0bWR3NGk="><img src="images/Instagram.webp" width="40" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/ekechukwuic?"><img src="images/linkedin.webp" width="40" alt="linkedin"></a>
+                <a href="https://x.com/centiagwendolyn?t=xkrHNoEdwcGwjqtZ9W7Bqw&s=09"><img src="images/Twitter.webp" width="40" alt="twitter"></a>
+            </div>
+        </div>
+        </section><br>
+
+        <p>
+            &copy; <span id="currentyear"></span> CenzonHub, Nigeria. All Rights Reserved.
+        </p><br>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

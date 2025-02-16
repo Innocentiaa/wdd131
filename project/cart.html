@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CenzonHub Cart Page</title>
+    <meta name="author" content="Innocentia Chinweotito Ekechukwu">
+    <meta name="description" content="This is the cart page where items added to cart will be displayed.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/wdd131/project/styles/index.css">
+    <script src="scripts/cart.js" defer></script>
+</head>
+  
+<body>
+
+    <header class="main-header">
+       
+      <a href="index.html">
+        <img src="images/logo3.png" alt="Company Logo" width="400">
+      </a>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="cart.html">🛒</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart">
+          <h2>Your Cart</h2>
+          <div id="cart-items"></div>
+          <button onclick="checkout()">Checkout</button>
+        </section>
+      </main>
+      
+  
+      <footer>
+
+        <section class="footer-nav">  
+            <nav class="foot">
+                <h2>About CenzonHub</h2>  
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="terms.html"> Terms and Condition</a> 
+            </nav>
+        
+            <nav class="payment">
+                <h2>Payment</h2>
+                <a href="https://mea.mastercard.com/en-region-mea.html"> Mastercard</a>
+                <a href="https://myverveworld.com/home"> Verve </a>
+                <a href="https://www.visa.com.ng/"> Visa </a>
+
+            </nav>
+
+        <div class="social-nav">
+            <h2>Connect With Us</h2><br>
+            <div class="social">
+                <a href="https://www.facebook.com/gwendolyn.innocentia"><img src="images/facebook.webp" width="40" alt="facebook"></a>
+                <a href="https://www.instagram.com/centiagwendolyn?igsh=YW1xa2E0bWR3NGk="><img src="images/Instagram.webp" width="40" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/ekechukwuic?"><img src="images/linkedin.webp" width="40" alt="linkedin"></a>
+                <a href="https://x.com/centiagwendolyn?t=xkrHNoEdwcGwjqtZ9W7Bqw&s=09"><img src="images/Twitter.webp" width="40" alt="twitter"></a>
+            </div>
+        </div>
+        </section><br>
+
+        <p>
+          &copy; <span id="currentyear"></span> CenzonHub, Nigeria. All Rights Reserved.
+      </p><br>
+      <p id="lastModified"></p>
+    </footer>
+        
+  </body>
+</html>
