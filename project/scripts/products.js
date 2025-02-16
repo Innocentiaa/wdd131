@@ -20,13 +20,31 @@ products.forEach((product) => {
   const productDiv = document.createElement("div");
   productDiv.className = "product-card";
   productDiv.innerHTML = `
-      <img src="${product.image}" alt="${product.name}">
+      <img class="lazy" data-src="${product.image}" alt="${product.name}">
       <h3>${product.name}</h3>
       <p>${product.description}</p>
       <p class="price">$${product.price}</p>
       <button onclick="addToCart(${product.id})">Add to Cart</button>
   `;
   productList.appendChild(productDiv);
+});
+
+// Lazy load images using Intersection Observer
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyImages = document.querySelectorAll("img.lazy");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src; // Replace `data-src` with the actual image source
+        img.classList.remove("lazy"); // Remove lazy class
+        observer.unobserve(img); // Stop observing the image
+      }
+    });
+  });
+
+  lazyImages.forEach(img => observer.observe(img));
 });
 
 function updateCartCount() {
